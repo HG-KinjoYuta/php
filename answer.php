@@ -1,3 +1,13 @@
+<?php
+require_once("./class/PythagoreanTheorem.php");
+
+$a = $_GET['a'];
+$b = $_GET['b'];
+$pt = new PythagoreanTheorem();
+$answer = $pt->createAnswer($a,$b);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
