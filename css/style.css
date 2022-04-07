@@ -34,6 +34,19 @@ textarea{
 }
 
 .button_wrap > button{
-    width: 40%;
-    margin-left: 6%;
+    width: 50%;
+    margin-right: 0;
+    margin-left: 50%;
+}
+
+.content_wrap{
+    width: 500px;
+    height: 300px;
+    padding: 5px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+.content_wrap > p{
+    margin: 0;
 }

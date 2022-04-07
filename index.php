@@ -24,8 +24,7 @@ $tasksList = $tasks->getAllTasks();
                     <p>$task[1]</p>
                     </div>
                     <div class='button_wrap'>
-                    <button type='submit' formaction='./edit.php' formmethod='GET' name='id' value='$task[0]'>編集</button>
-                    <button type='submit' formaction='./destroy.php' formmethod='POST' name='id' value='$task[0]'>削除</button>
+                    <button type='submit' formaction='./show.php' formmethod='GET' name='id' value='$task[0]'>詳細</button>
                     </div>
                     </div>";
         }

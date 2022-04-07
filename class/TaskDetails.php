@@ -1,26 +1,24 @@
 <?php
 require_once("./class/Common.php");
 
-class TasksList extends Common{
+class TaskDetails extends Common{
 
-    public function getAllTasks()
+    function getTaskDetails($id)
     {
-        //タスク一覧取得用SQL生成
-        $sql = "SELECT * FROM tasks ORDER BY id DESC";
+        //タスク詳細取得用SQL生成
+        $sql = "SELECT * FROM tasks WHERE id = $id";
 
         //DB接続
         $link = common::dbConnect();
 
         //タスク一覧取得
         $result = mysqli_query($link,$sql);
-        $tasksList = mysqli_fetch_all($result);
+        $taskDetails = mysqli_fetch_assoc($result);
 
         //DB切断
         common::dbClose($link);
 
-        return $tasksList;
+        return $taskDetails;
     }
-
 }
-
 ?>
