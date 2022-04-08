@@ -24,12 +24,5 @@ class Common{
             die('切断失敗です。');
         }
     }
-
-    protected function dbSelect($sql)
-    {
-
-    }
-
-    
 }
 ?>
